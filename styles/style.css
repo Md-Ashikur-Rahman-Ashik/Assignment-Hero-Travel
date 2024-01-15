@@ -1,0 +1,120 @@
+/* Imported Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+/* Shared Styles */
+*{
+    font-family: "Mulish", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Styling header section */
+header{
+    margin: 50px 100px;
+}
+
+.brandIcon > h3{
+    display: flex;
+    align-items: center;
+    color: #131318;
+    font-size: 1.8rem;
+    font-weight: 800;
+}
+
+h3 > span{
+    color: #FF5400;
+    margin-left: 10px;
+}
+
+header > nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.brandIcon{
+    display: flex;
+    gap: 20px;
+}
+
+nav > ul{
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    padding: 10px 0px;
+}
+
+ul > li{
+    list-style: none;
+    font-size: 1.2rem;
+}
+
+li:nth-child(1){
+    color: #FF5400;
+}
+
+/* Styling explore section */
+.mainExplore{
+    margin: 50px 100px;
+    padding: 100px 250px;
+    background: linear-gradient(rgba(19, 19, 24, 0.80), rgba(19, 19, 24, 0.20)), url("../Images/Group\ 13\ \(1\)\ \(1\).png");
+    background-size: cover;
+    border-radius: 16px;
+    /* filter: brightness(80%); */
+}
+
+.mainExplore{
+    text-align: center;
+}
+
+.mainExplore > h1{
+    color: #FFF;
+    font-size: 3.5rem;
+    font-weight: 800;
+}
+
+.mainExplore > p{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #FFF;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.mainInputs{
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.30);
+}
+
+.firstInput, .mainInputs > select{
+    border-radius: 8px;
+    background: #FFF;
+    border: 0;
+    padding: 10px 0px 10px 10px ;
+    font-size: 1rem;
+    width: 25%;
+    margin-left: 10px;
+    color: rgba(19, 19, 24, 0.50);
+}
+
+/* select > option{
+    color: rgba(19, 19, 24, 0.50);
+} */
+
+/* .mainInputs > button{
+    border: none;
+    background: transparent;
+    margin: 0;
+    padding: 7px 8px;
+    font-size: 14px;
+    color: inherit;
+    border: 1px solid transparent;
+    border-radius: inherit;
+} */
+
+button > img{
+    width: 30%;
+    object-fit: cover;
+}
+
