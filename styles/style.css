@@ -425,7 +425,7 @@ footer > p{
 
 /* Responsive styles for mobile devices */
 @media screen and (max-width: 600px) {
-    header, .selection, .callToAction{
+    header, .selection, .callToAction, .testimonial{
         margin: 30px 10px;
     }
 
@@ -441,7 +441,7 @@ footer > p{
         align-items: center;
     }
 
-    nav > ul, .twoService, .callToAction{
+    nav > ul, .twoService, .callToAction, .testimonial{
         flex-direction: column;
         /* margin-top: 10px; */
     }
@@ -474,7 +474,7 @@ footer > p{
         margin: 30px;
     }
 
-    .popularContent, .popularImg, .thirdService, .discountImg, .newsLetter{
+    .popularContent, .popularImg, .thirdService, .discountImg, .newsLetter, .testimonialText, .testimonialContent{
         width: 100%;
     }
 
@@ -498,6 +498,10 @@ footer > p{
 
     footer > p{
         font-size: 1rem;
+    }
+
+    .testimonial{
+        gap: 10px;
     }
 }
 
