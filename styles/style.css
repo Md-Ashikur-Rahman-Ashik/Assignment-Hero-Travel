@@ -349,6 +349,41 @@ hr{
     border-radius: 16px;
 }
 
+/* Styling footer section */
+footer{
+    background: rgba(19, 19, 24, 0.05);
+    padding: 50px 100px;
+}
+
+footer > .brandIcon{
+    justify-content: center;
+    align-items: center;
+}
+
+footer > p{
+    font-size: 0.8rem;
+    color: rgba(19, 19, 24, 0.70);
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.footerIcon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 40px;
+}
+
+.final{
+    color: #131318;
+}
+
+.footerIcon img{
+    width: 3%;
+}
+
 
 /* Responsive styles for mobile devices */
 @media screen and (max-width: 600px) {
@@ -413,6 +448,18 @@ hr{
     .destinationImg{
         display: flex;
         flex-direction: column;
+    }
+
+    footer{
+        padding: 50px;
+    }
+
+    .footerIcon img{
+        width: 15%;
+    }
+
+    footer > p{
+        font-size: 1rem;
     }
 }
 
