@@ -62,9 +62,6 @@ li:nth-child(1){
     background-size: cover;
     border-radius: 16px;
     /* filter: brightness(80%); */
-}
-
-.mainExplore{
     text-align: center;
 }
 
@@ -85,17 +82,25 @@ li:nth-child(1){
 .mainInputs{
     border-radius: 8px;
     background: rgba(255, 255, 255, 0.30);
+    display: flex;
+    padding: 20px;
+    gap: 10px;
 }
 
-.firstInput, .mainInputs > select{
+.firstInput, .mainInputs > select, .mainInputs > button{
     border-radius: 8px;
     background: #FFF;
     border: 0;
     padding: 10px 0px 10px 10px ;
     font-size: 1rem;
     width: 25%;
-    margin-left: 10px;
     color: rgba(19, 19, 24, 0.50);
+}
+
+.mainInputs > button{
+    /* border-radius: 8px; */
+    background: #FF5400;
+    color: white;
 }
 
 /* select > option{
@@ -113,8 +118,77 @@ li:nth-child(1){
     border-radius: inherit;
 } */
 
-button > img{
+/* button > img{
     width: 30%;
     object-fit: cover;
+} */
+
+/* Responsive styles for mobile devices */
+@media screen and (max-width: 600px) {
+    header{
+        margin: 10px;
+    }
+
+    .brandIcon > h3{
+        font-size: 1.5rem;
+        /* width: 100%; */
+        /* justify-content: center; */
+        /* align-items: center; */
+    }
+
+    header > nav{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav > ul{
+        flex-direction: column;
+    }
+
+    .mainExplore{
+        display: flex;
+        flex-direction: column;
+        margin: 10px;
+        padding: 10px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .mainInputs{
+        /* align-items: center;
+        justify-content: center; */
+        flex-direction: column;
+        padding: 5px;
+        gap: 10px;
+        width: 75%;
+    }
+
+    .firstInput, .mainInputs > select, .mainInputs > button{
+        width: 90%;
+    }
 }
 
+/* Responsive styles for devices larger or equal to 992px */
+@media screen and (min-width: 992px){
+    header{
+        margin: 50px 60px;
+    }
+
+    .mainExplore{
+        /* width: 100%; */
+        margin: 50px 50px;
+        padding: 50px 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .mainExplore > p{
+        margin-bottom: 40px;
+    }
+
+    .mainInputs{
+        gap: 20px;
+        width: 80%;
+    }
+}
