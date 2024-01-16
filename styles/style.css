@@ -11,7 +11,7 @@
 
 /* Styling header section */
 header{
-    margin: 50px 100px;
+    margin: 50px 50px;
 }
 
 .brandIcon > h3{
@@ -41,17 +41,17 @@ header > nav{
 
 nav > ul{
     display: flex;
-    gap: 40px;
+    gap: 20px;
     align-items: center;
     padding: 10px 0px;
 }
 
-ul > li{
+nav > ul > li{
     list-style: none;
     font-size: 1.2rem;
 }
 
-li:nth-child(1){
+nav > ul > li:nth-child(1){
     color: #FF5400;
 }
 
@@ -94,7 +94,7 @@ li:nth-child(1){
     border: 0;
     padding: 10px 0px 10px 10px ;
     font-size: 1rem;
-    width: 25%;
+    width: 30%;
     color: rgba(19, 19, 24, 0.50);
 }
 
@@ -141,13 +141,81 @@ li:nth-child(1){
     font-weight: 800;
 }
 
+.popularContent > p, .popularContent li{
+    font-size: 1rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: rgba(19, 19, 24, 0.70);
+}
+
+.popularContent > ul{
+    padding: 10px 20px;
+}
+
+.popularContent > button{
+    border-radius: 8px;
+    background: #FF5400;
+    border: 0;
+    padding: 10px 30px;
+    color: white;
+    margin-top: 20px;
+}
+
 .popularImg{
     width: 48%;
 }
 
 .popularImg img{
     width: 100%;
+    /* width: auto; */
+    height: 100%;
+    border-radius: 16px;
+    object-fit: cover;
 }
+
+/* Styling destination area */
+.destination{
+    margin: 50px 100px;
+}
+
+.destinationContent{
+    text-align: center;
+}
+
+.destinationContent > h3{
+    color: #131318;
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+.destinationContent > p{
+    font-size: 1rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: rgba(19, 19, 24, 0.70);
+}
+
+.destinationImg{
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(12, 1fr);
+}
+
+.destinationImg img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.img1{
+    grid-column: 1/ span 6;
+    /* grid-row: 1/ span 1; */
+}
+
+.img2{
+    grid-column: 7/ span 6;
+}
+
+
 
 /* Responsive styles for mobile devices */
 @media screen and (max-width: 600px) {
@@ -192,17 +260,31 @@ li:nth-child(1){
     .firstInput, .mainInputs > select, .mainInputs > button{
         width: 90%;
     }
+
+    .popular{
+        flex-direction: column;
+        gap: 10px;
+        margin: 30px;
+    }
+
+    .popularContent{
+        width: 100%;
+    }
+
+    .popularImg{
+        width: 100%;
+    }
 }
 
 /* Responsive styles for devices larger or equal to 992px */
 @media screen and (min-width: 992px){
-    header{
+    /* header{
         margin: 50px 60px;
-    }
+    } */
 
     .mainExplore{
         /* width: 100%; */
-        margin: 50px 50px;
+        /* margin: 50px 50px; */
         padding: 50px 50px;
         display: flex;
         flex-direction: column;
