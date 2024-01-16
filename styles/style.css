@@ -197,13 +197,14 @@ nav > ul > li:nth-child(1){
 
 .destinationImg{
     display: grid;
-    grid-template-rows: repeat(3, 1fr);
     grid-template-columns: repeat(12, 1fr);
+    gap: 20px;
 }
 
 .destinationImg img{
     width: 100%;
     object-fit: cover;
+    height: 100%;
 }
 
 .img1{
@@ -215,12 +216,80 @@ nav > ul > li:nth-child(1){
     grid-column: 7/ span 6;
 }
 
+.img3{
+    grid-column: 1/ span 4;
+    /* grid-row: 2/ span 1; */
+}
+
+.img4{
+    grid-column: 5/ span 5;
+}
+
+.img5{
+    grid-column: 10/ span 3;
+}
+
+.img6{
+    grid-column: 1/ span 5;
+}
+
+.img7{
+    grid-column: 6/ span 7;
+}
+
+/* Styling selection section */
+.selection{
+    margin: 50px 100px;
+}
+
+.selectionText{
+    text-align: center;
+}
+
+.selectionText > h3{
+    color: #131318;
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+.selectionText > p, .twoService p, .thirdService p{
+    font-size: 1rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: rgba(19, 19, 24, 0.70);
+}
+
+.twoService{
+    display: flex;
+    border-radius: 16px;
+    gap: 20px;
+}
+
+.twoService h5, .thirdService h5{
+    font-size: 1.2rem;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.firstService, .secondService, .thirdService{
+    border: 1px solid rgba(251, 181, 99, 0.20);
+    background: rgba(251, 181, 99, 0.05);
+    padding: 20px;
+}
+
+.thirdService{
+    margin-top: 20px;
+    border-radius: 16px;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 
 /* Responsive styles for mobile devices */
 @media screen and (max-width: 600px) {
-    header{
-        margin: 10px;
+    header, .selection{
+        margin: 20px 10px;
     }
 
     .brandIcon > h3{
@@ -235,8 +304,9 @@ nav > ul > li:nth-child(1){
         align-items: center;
     }
 
-    nav > ul{
+    nav > ul, .twoService{
         flex-direction: column;
+        margin-top: 10px;
     }
 
     .mainExplore{
@@ -273,6 +343,16 @@ nav > ul > li:nth-child(1){
 
     .popularImg{
         width: 100%;
+    }
+
+    .destination{
+        flex-direction: column;
+        margin: 10px;
+    }
+
+    .destinationImg{
+        display: flex;
+        flex-direction: column;
     }
 }
 
