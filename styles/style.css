@@ -531,6 +531,7 @@ footer > p{
         padding: 10px;
         top: 70%;
     }
+
 }
 
 /* Responsive styles for devices larger or equal to 992px */
@@ -555,5 +556,9 @@ footer > p{
     .mainInputs{
         gap: 20px;
         width: 80%;
+    }
+
+    .newsLetter{
+        padding: 20px;
     }
 }
